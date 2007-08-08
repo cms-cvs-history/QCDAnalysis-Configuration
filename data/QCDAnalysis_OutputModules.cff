@@ -1,0 +1,22 @@
+##################################################
+#
+#  Collection of all outputModules for QCD Analysis
+#
+##################################################
+
+
+
+##################################################
+#
+#  Added by D. Mason 8/7/07
+#
+##################################################
+
+# Individual jet trigger skims 
+
+include "QCDAnalysis/Skimming/data/QCDHLT1jetOutputModule.cfi"
+include "QCDAnalysis/Skimming/data/QCDHLT1jetPE1OutputModule.cfi"
+include "QCDAnalysis/Skimming/data/QCDHLT1jetPE3OutputModule.cfi"
+include "QCDAnalysis/Skimming/data/QCDHLT1jetPE5OutputModule.cfi"
+include "QCDAnalysis/Skimming/data/QCDHLT1jetPE7OutputModule.cfi"
+
