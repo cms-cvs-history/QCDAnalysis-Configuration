@@ -10,13 +10,28 @@
 #
 #  Added by D. Mason 8/7/07
 #
+#  Pulled out single jet skims -- brought in 
+#  Andreas Oehler's 3 skims + 2 more from UE  8/21/07
+#
 ##################################################
 
-# Individual jet trigger skims 
+#  Andreas Oehler's skims -- apparently requires random numbers...
 
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPath.cff"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE1Path.cff"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE3Path.cff"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE5Path.cff"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE7Path.cff"
+        service = RandomNumberGeneratorService { 
+                PSet moduleSeeds =
+                {
+                untracked uint32 qcdSingleJetFilterHi=9821
+                untracked uint32 qcdSingleJetFilterMed=14821
+                untracked uint32 qcdSingleJetFilterLo=3214
+                }
+        }
 
+
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamHiPath.cff"
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamMedPath.cff"
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamLoPath.cff"
+
+# QCD UE analysis Skims
+
+include "QCDAnalysis/Skimming/data/softJetsPath.cff"
+include "QCDAnalysis/Skimming/data/diMuonPath.cff"

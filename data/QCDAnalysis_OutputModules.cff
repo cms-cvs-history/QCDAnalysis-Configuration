@@ -10,13 +10,19 @@
 #
 #  Added by D. Mason 8/7/07
 #
+#  Pulled out single jet skims -- brought in 
+#  Andreas Oehler's 3 skims + 2 more from UE  8/21/07
+#
 ##################################################
 
-# Individual jet trigger skims 
+#  Andreas Oehler's skims
 
-include "QCDAnalysis/Skimming/data/QCDHLT1jetOutputModule.cfi"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE1OutputModule.cfi"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE3OutputModule.cfi"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE5OutputModule.cfi"
-include "QCDAnalysis/Skimming/data/QCDHLT1jetPE7OutputModule.cfi"
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamHiOutputModule.cfi"
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamMedOutputModule.cfi"
+include "QCDAnalysis/Skimming/data/qcdJetFilterStreamLoOutputModule.cfi"
+
+# UE analysis QCD skims
+
+include "QCDAnalysis/Skimming/data/softJetsOutputModule.cfi"
+include "QCDAnalysis/Skimming/data/diMuonOutputModule.cfi"
 
