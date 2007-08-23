@@ -17,16 +17,6 @@
 
 #  Andreas Oehler's skims -- apparently requires random numbers...
 
-        service = RandomNumberGeneratorService { 
-                PSet moduleSeeds =
-                {
-                untracked uint32 qcdSingleJetFilterHi=9821
-                untracked uint32 qcdSingleJetFilterMed=14821
-                untracked uint32 qcdSingleJetFilterLo=3214
-                }
-        }
-
-
 include "QCDAnalysis/Skimming/data/qcdJetFilterStreamHiPath.cff"
 include "QCDAnalysis/Skimming/data/qcdJetFilterStreamMedPath.cff"
 include "QCDAnalysis/Skimming/data/qcdJetFilterStreamLoPath.cff"
